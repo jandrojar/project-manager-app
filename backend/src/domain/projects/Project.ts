@@ -1,4 +1,3 @@
-// Project.ts
 /**
  * Project domain entity
  */
@@ -9,4 +8,11 @@ export interface Project {
   createdAt: Date;
   updatedAt: Date;
   isArchived: boolean;
+}
+
+/**
+ * Project repository interface 
+ */
+export interface ProjectRepository {
+  save(project: Project): Promise<Project>; 
 }

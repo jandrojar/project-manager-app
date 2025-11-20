@@ -19,7 +19,7 @@ router.get('/health', (ctx) => {
 
 
 app.use(router.routes()); // Mount the router to handle requests
-app.use(projectRoutes.routes());
+app.use(projectRoutes.routes()); // Mount your custom routes here
 app.use(router.allowedMethods()); // Handle HTTP methods not defined in routes
 
 export default app;
