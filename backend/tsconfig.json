@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "src", // root directory of the project source files
+    "outDir": "dist", // output directory for compiled JavaScript files
+    "strict": true,
+    "esModuleInterop": true 
+  }
+}
