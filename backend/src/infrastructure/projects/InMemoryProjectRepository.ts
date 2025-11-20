@@ -12,7 +12,7 @@ export class InMemoryProjectRepository implements ProjectRepository {
     return project;
   }
 
-  getAll(): Project[] {
+  async getAll(): Promise <Project[]> {
     return this.projects;
   }
 }

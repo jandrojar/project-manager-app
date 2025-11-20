@@ -15,4 +15,6 @@ export interface Project {
  */
 export interface ProjectRepository {
   save(project: Project): Promise<Project>; 
+
+  getAll(): Promise <Project[]>;
 }
