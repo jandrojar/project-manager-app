@@ -1,17 +1,17 @@
 import { Project } from "../../domain/projects/Project";
+import { ProjectRepository } from "../../domain/projects/Project";
 
-// DTOs (Data Transfer Objects)
+/**
+ * Input data required to create a new project
+ */
 export interface CreateProjectDTO {
   name: string;
   description?: string;
 }
 
-// Repositories
-export interface ProjectRepository {
-  save(project: Project): Promise<Project>; 
-}
 
-/*
+/**
+ * Service responsible for creating a new Project
  */
 export class CreateProjectService {
     constructor(private readonly projectRepository: ProjectRepository) {}
